@@ -1,0 +1,13 @@
+form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+form > div{
+    margin: 0.5em;
+}
+
+.employeeList{
+    margin-top: 25px;
+}
+
