@@ -21,7 +21,7 @@ const UpdateEmployee = () => {
     useEffect(() => {
         const empID = params.empID.toString();
 
-        axios.get(`${process.env.REACT_APP_BASE_URL}/employees/${empID}`).then((response) =>{
+        axios.get(`https://vijay-crm.onrender.com/employees/${empID}`).then((response) =>{
             setEmployeeDetails(response.data);
             console.log('Reponse: ', response.data);
         }).catch(error => {
@@ -40,7 +40,7 @@ const UpdateEmployee = () => {
         console.log('Employee Details : ', employeeDetails);
         try{
             const empID = params.empID.toString();
-            const response = await axios.put(`${process.env.REACT_APP_BASE_URL}/employees/${empID}`, employeeDetails);
+            const response = await axios.put(`https://vijay-crm.onrender.com/employees/${empID}`, employeeDetails);
             if(response){
                 setEmployeeDetails({
                     name:'',
