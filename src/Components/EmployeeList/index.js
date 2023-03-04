@@ -2,7 +2,8 @@ import { Button } from "bootstrap";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import './EmployeeList.css'
+import './EmployeeList.css';
+
 
 
 
@@ -59,8 +60,8 @@ const EmployeeList = () => {
                                 <td>{employee.dob}</td>
                                 <td>{employee.profession}</td>
                                 <td>
-                                    <NavLink className='btn btn-link' to={`/employees/${employee._id}/update`} >Edit</NavLink>
-                                    <button className="btn btn-link" onClick={() => handleDelete(employee._id)} >Delete</button>
+                                    <NavLink className="btn btn-primary" to={`/employees/${employee._id}/update`} >Edit</NavLink>
+                                    <button className="btn btn-danger" onClick={() => handleDelete(employee._id)} >Delete</button>
                                 </td>
                           </tr>
                     ))}
