@@ -11,7 +11,7 @@ const CreateEmployee = () => {
         mobileNumber:'',
         address:'',
         dob:'',
-        profession:'',
+        profession:'', 
     })
 
     const handleSubmit = async(event) => {
